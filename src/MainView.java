@@ -254,13 +254,13 @@ public class MainView{
         drawingPanel.addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent mouseEvent) {
-                if (canvas != null)
-                    canvas.handleClick(mouseEvent);
+                
             }
 
             @Override
             public void mousePressed(MouseEvent mouseEvent) {
-
+                if (canvas != null)
+                    canvas.handleClick(mouseEvent);
             }
 
             @Override
